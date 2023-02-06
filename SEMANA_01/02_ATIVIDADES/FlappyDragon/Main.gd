@@ -1,10 +1,13 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
+var status = 0
+# o jogo comeca parado
 var vscore = 0
-var x = 1.5 
-var y = 1.5 
-
+# aumenta conforme passa pelos obstaculos
+var x = 2
+# controla a velocidade do background
+var y = 2
+# funciona como a gravidade, no momento que para subir ou descer.
 # executa essa função ao carregar o jogo
 func _ready():
 	# oculta o "gameover"
